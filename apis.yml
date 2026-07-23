@@ -1,7 +1,30 @@
 aid: afujingyou
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/afujingyou.png
 name: afujingyou
-description: afujingyou is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'afujingyou (阿芙 / AFU) is a Chinese consumer essential-oil, aromatherapy
+  and skincare brand founded in 2006, backed by Qiming Venture Partners (Series C,
+  2017). It sells single and blended essential oils, base/carrier oils, masks, emulsions
+  and face creams through retail and e-commerce channels (Tmall/JD/Weibo storefronts).
+  Enrichment finding (2026-07-17): this is a consumer packaged-goods brand, not an
+  API provider — no public developer portal, documentation, OpenAPI, or other API
+  artifacts exist to harvest, and the catalog domain afujingyou.net.cn does not resolve
+  (NXDOMAIN). Retained as an identity-only record; no API artifacts are applicable.'
+x-enrichment-status: no-api-surface
+x-enrichment-notes: 'Consumer cosmetics/essential-oil brand; no developer surface.
+  afujingyou.net.cn = NXDOMAIN; afujingyou.com is a HugeDomains for-sale parking page;
+  retail sites (afuvip.com / afu.com.cn) are China-hosted and unreachable/geo-blocked.
+  No OpenAPI, packages, MCP, or well-known artifacts producible without fabrication.'
 url: https://raw.githubusercontent.com/api-evangelist/afujingyou/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +37,14 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Consumer Brand
+- Cosmetics
+- Essential Oils
+- Skincare
+- Aromatherapy
+- E-commerce
+- China
+- Non-API
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +54,8 @@ maintainers:
 common:
 - type: Website
   url: https://afujingyou.net.cn
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
